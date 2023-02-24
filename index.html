@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Cute Site</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Generate Image</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
-    <h1>Cute Site</h1>
-    <button id="generate-btn">Generate</button>
-    <div id="image-container"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.0.0/dist/tf.min.js"></script>
+    <canvas id="canvas" width="128" height="128"></canvas>
+    <button id="generate-btn">Generate Image</button>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0/dist/tf.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
